@@ -41,7 +41,7 @@ function generatePassword() {
   var includeUpperChars = window.confirm("Include uppercase characters?");
   var includeNumericChars = window.confirm("Include numeric characters?");
   var includeSpecialChars = window.confirm("Include special characters?");
-  // Add an if to make sure the user chooses a character to add
+  
   // Use answers to make password
   if (includeLowerChars) {
     passwordCharacters = passwordCharacters.concat(lowercaseChars);
@@ -64,8 +64,6 @@ function generatePassword() {
     generatedPassword += passwordCharacters[randomIndex];
   }
   console.log(generatedPassword);
-  // var push into new array
-  // var password = turn array into string, .toString()
-  console.log(password);
+
   return generatedPassword;
 }
